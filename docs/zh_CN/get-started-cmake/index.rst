@@ -203,8 +203,13 @@ ESP-IDF 将下载至 ``%userprofile%\esp\esp-idf``。
 
 ESP-IDF 所需的 Python 软件包位于 ``IDF_PATH/requirements.txt`` 中。您可以运行以下命令进行安装： ::
 
+Linux 和 MacOS 操作系统
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     python -m pip install --user -r $IDF_PATH/requirements.txt
 
+Windows 操作系统
+~~~~~~~~~~~~~~~~~~
+    python -m pip install --user -r %IDF_PATH%/requirements.txt
 .. note::
 
     请注意查询您所使用的 Python 解释器的版本（运行命令 ``python --version``），并根据查询结果将上方命令中的 ``python`` 替换为 ``python2``, ``python2.7``，例如：
